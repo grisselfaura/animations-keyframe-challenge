@@ -1,0 +1,32 @@
+.box {
+  background-color: #0799d3;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 0;
+  position: relative;
+  animation-name: jump;
+  animation-duration: 0.5s; /* play with other values */
+  animation-timing-function: ease-in-out; /* play with other values */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes jump {
+   from {
+      top: 0;
+     }
+    
+    to {
+      top: 100px;
+    }
+}
+
+@-webkit-keyframes jump {
+    from {
+      top: 0;
+    }
+    to {
+      top: 100px;
+    }
+  }
